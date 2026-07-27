@@ -1,0 +1,219 @@
+{
+  "schema_version": "2.1",
+  "module": "industrial_safety",
+  "secrets": [
+    {
+      "name": "raw_video",
+      "kind": "raw_media",
+      "allowed_transforms": ["extract_visual_feature"],
+      "allowed_sinks": [],
+      "forbidden_sinks": ["send_to_cloud", "net_send", "socket.send"],
+      "zeroizers": ["destroy_sensitive_buffer"],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    },
+    {
+      "name": "raw_audio",
+      "kind": "raw_media",
+      "allowed_transforms": ["extract_audio_feature"],
+      "allowed_sinks": [],
+      "forbidden_sinks": ["send_to_cloud", "net_send", "socket.send"],
+      "zeroizers": ["destroy_sensitive_buffer"],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    },
+    {
+      "name": "shared_secret",
+      "kind": "mlkem_shared_secret",
+      "allowed_transforms": ["derive_session_key"],
+      "allowed_sinks": [],
+      "forbidden_sinks": ["send_over_network", "send_to_cloud", "socket.send"],
+      "zeroizers": ["destroy_sensitive_buffer"],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    },
+    {
+      "name": "session_key",
+      "kind": "session_key",
+      "allowed_transforms": [],
+      "allowed_sinks": ["encrypt_control_payload", "authenticate_control_message", "verify_hmac_tag"],
+      "forbidden_sinks": ["send_over_network", "send_to_cloud", "socket.send"],
+      "zeroizers": ["destroy_sensitive_buffer"],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": false,
+      "forbid_use_after_zeroize": true
+    }
+  ],
+  "zeroizers": [
+    "destroy_sensitive_buffer"
+  ],
+  "protection_domains": {
+    "variables": [
+      {"name": "raw_video", "domain": "raw_video"},
+      {"name": "raw_audio", "domain": "raw_audio"},
+      {"name": "raw_telemetry", "domain": "raw_telemetry"},
+      {"name": "visual_feature", "domain": "visual_feature"},
+      {"name": "audio_feature", "domain": "audio_feature"},
+      {"name": "telemetry_feature", "domain": "telemetry_feature"},
+      {"name": "multimodal_feature_bundle", "domain": "multimodal_feature_bundle"},
+      {"name": "ckks_ciphertext_eval", "domain": "ckks_ciphertext[evaluation_context]"},
+      {"name": "encrypted_eval", "domain": "encrypted_safety_score[evaluation_context]"},
+      {"name": "plaintext_score_val", "domain": "local_plaintext_safety_score"},
+      {"name": "shared_secret", "domain": "mlkem_shared_secret"},
+      {"name": "session_key", "domain": "session_key"},
+      {"name": "control_msg", "domain": "network_control"},
+      {"name": "auth_msg", "domain": "authenticated_control"},
+      {"name": "verified_msg", "domain": "authenticated_control"},
+      {"name": "fresh_msg", "domain": "fresh_control"},
+      {"name": "destroyed_val", "domain": "destroyed"}
+    ],
+    "transitions": [
+      {
+        "function": "extract_visual_feature",
+        "from": "raw_video",
+        "to": "visual_feature"
+      },
+      {
+        "function": "extract_audio_feature",
+        "from": "raw_audio",
+        "to": "audio_feature"
+      },
+      {
+        "function": "extract_telemetry_feature",
+        "from": "raw_telemetry",
+        "to": "telemetry_feature"
+      },
+      {
+        "function": "bundle_multimodal_features",
+        "from": "visual_feature",
+        "to": "multimodal_feature_bundle"
+      },
+      {
+        "function": "ckks_encrypt_edge",
+        "from": "multimodal_feature_bundle",
+        "to": "ckks_ciphertext[evaluation_context]"
+      },
+      {
+        "function": "cloud_eval_encrypted_score",
+        "from": "ckks_ciphertext[evaluation_context]",
+        "to": "encrypted_safety_score[evaluation_context]"
+      },
+      {
+        "function": "edge_decrypt_score",
+        "from": "encrypted_safety_score[evaluation_context]",
+        "to": "local_plaintext_safety_score"
+      },
+      {
+        "function": "edge_apply_policy",
+        "from": "local_plaintext_safety_score",
+        "to": "network_control"
+      },
+      {
+        "function": "derive_session_key",
+        "from": "mlkem_shared_secret",
+        "to": "session_key"
+      },
+      {
+        "function": "authenticate_control_message",
+        "from": "network_control",
+        "to": "authenticated_control"
+      },
+      {
+        "function": "verify_hmac_tag",
+        "from": "authenticated_control",
+        "to": "authenticated_control"
+      },
+      {
+        "function": "verify_control_freshness",
+        "from": "authenticated_control",
+        "to": "fresh_control"
+      },
+      {
+        "function": "destroy_sensitive_buffer",
+        "from": "raw_video",
+        "to": "destroyed",
+        "output": "argument"
+      },
+      {
+        "function": "destroy_sensitive_buffer",
+        "from": "raw_audio",
+        "to": "destroyed",
+        "output": "argument"
+      },
+      {
+        "function": "destroy_sensitive_buffer",
+        "from": "mlkem_shared_secret",
+        "to": "destroyed",
+        "output": "argument"
+      },
+      {
+        "function": "destroy_sensitive_buffer",
+        "from": "session_key",
+        "to": "destroyed",
+        "output": "argument"
+      },
+      {
+        "function": "destroy_sensitive_buffer",
+        "from": "fresh_control",
+        "to": "destroyed",
+        "output": "argument"
+      }
+    ],
+    "allowed_sinks": [
+      {
+        "domain": "ckks_ciphertext[evaluation_context]",
+        "functions": ["cloud_transmit", "cloud_eval_encrypted_score"]
+      },
+      {
+        "domain": "encrypted_safety_score[evaluation_context]",
+        "functions": ["edge_decrypt_score"]
+      },
+      {
+        "domain": "local_plaintext_safety_score",
+        "functions": ["edge_apply_policy"]
+      },
+      {
+        "domain": "fresh_control",
+        "functions": ["actuate_control", "esp32s3_actuate"]
+      }
+    ],
+    "forbidden_sinks": [
+      {
+        "domain": "raw_video",
+        "functions": ["send_to_cloud", "net_send", "socket.send", "cloud_transmit"]
+      },
+      {
+        "domain": "raw_audio",
+        "functions": ["send_to_cloud", "net_send", "socket.send", "cloud_transmit"]
+      },
+      {
+        "domain": "mlkem_shared_secret",
+        "functions": ["send_over_network", "send_to_cloud", "socket.send", "net_send", "cloud_transmit"]
+      },
+      {
+        "domain": "network_control",
+        "functions": ["actuate_control", "esp32s3_actuate"]
+      },
+      {
+        "domain": "authenticated_control",
+        "functions": ["actuate_control", "esp32s3_actuate"]
+      },
+      {
+        "domain": "encrypted_safety_score[evaluation_context]",
+        "functions": ["actuate_control", "esp32s3_actuate", "cloud_transmit"]
+      },
+      {
+        "domain": "local_plaintext_safety_score",
+        "functions": ["actuate_control", "esp32s3_actuate", "cloud_transmit", "send_to_cloud", "net_send", "socket.send"]
+      },
+      {
+        "domain": "destroyed",
+        "functions": ["send_to_cloud", "net_send", "socket.send", "actuate_control", "esp32s3_actuate", "derive_session_key", "cloud_eval_encrypted_score"]
+      }
+    ],
+    "destroyed_domain": "destroyed"
+  }
+}

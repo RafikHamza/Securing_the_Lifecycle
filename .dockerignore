@@ -1,0 +1,8 @@
+.git
+__pycache__
+*.pyc
+*.egg-info
+build
+dist
+experiments/real_world/langchain_real
+experiments/real_world/espidf_real

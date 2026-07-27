@@ -1,0 +1,9 @@
+# ComMag Core Dependencies
+tenseal>=0.3.16
+pqcrypto>=0.3.4
+cryptography>=42.0.0
+cffi>=1.17.1
+pyserial>=3.5
+paramiko>=3.4.0
+numpy>=1.26.0
+matplotlib>=3.8.0

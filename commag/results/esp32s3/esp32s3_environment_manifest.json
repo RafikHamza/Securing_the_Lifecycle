@@ -1,0 +1,10 @@
+{
+  "module": "ESP32-S3-WROOM-1",
+  "development_board": "ESP32-S3-DevKitC-1 (CH343 USB-to-UART)",
+  "serial_port": "COM8",
+  "baud_rate": 115200,
+  "usb_vid_pid": "1A86:55D3",
+  "cpu_frequency_mhz": 240,
+  "firmware_environment": "ESP-IDF v4.4.7-dirty",
+  "captured_at": "2026-07-24T10:18:27Z"
+}

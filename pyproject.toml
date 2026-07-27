@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpd_verifier"
+version = "0.1.0"
+description = "Contract-driven detection of secret-lifecycle violations in edge and cryptographic software."
+readme = "README.md"
+requires-python = ">=3.10,<4"
+dependencies = []
+license = { text = "MIT" }
+authors = [
+  { name = "Anonymous Authors" }
+]
+
+[project.scripts]
+cpd_verifier = "cpd_verifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cpd_verifier*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = [
+    "experiments/corpus/codeql-db",
+    "experiments/corpus/codeql-db-synth",
+    "experiments/corpus/codeql_temp_src",
+    "experiments/real_world/*/codeql-db-python",
+    "experiments/real_world/langchain_real",
+    "experiments/real_world/espidf_real",
+    "experiments",
+    "codeql",
+    "*.egg-info",
+    "build",
+    "dist",
+    ".git"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4,<9"]
+cpp = []
+baselines = ["semgrep>=1.167.0"]
+hardware = ["pyserial>=3.5", "platformio>=6.1.19", "esptool>=5.2.0"]
+plots = ["matplotlib>=3.8", "numpy>=1.26", "pandas>=2.2", "tqdm>=4.66"]
+all = [
+  "pytest>=7.4,<9",
+  "semgrep>=1.167.0",
+  "pyserial>=3.5",
+  "platformio>=6.1.19",
+  "esptool>=5.2.0",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "tqdm>=4.66",
+]

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ESP32S3TelemetryMessage",
+  "type": "object",
+  "properties": {
+    "device_id": {
+      "type": "string",
+      "default": "esp32s3-node-01"
+    },
+    "sequence": {
+      "type": "integer"
+    },
+    "sensor_timestamp_ms": {
+      "type": "integer"
+    },
+    "vh_avg_cycles": {
+      "type": "integer"
+    },
+    "vh_avg_time_us": {
+      "type": "number"
+    },
+    "baseline_avg_cycles": {
+      "type": "integer"
+    },
+    "machine_state": {
+      "type": "string",
+      "enum": ["running", "warning", "stopped"]
+    }
+  },
+  "required": [
+    "device_id",
+    "sequence",
+    "vh_avg_cycles",
+    "vh_avg_time_us"
+  ]
+}

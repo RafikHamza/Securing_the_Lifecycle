@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.1",
+  "module": "mlkem_session",
+  "secrets": [
+    {
+      "name": "shared_secret",
+      "kind": "mlkem_shared_secret",
+      "allowed_transforms": [
+        "derive_session_key"
+      ],
+      "allowed_sinks": [],
+      "forbidden_sinks": [
+        "print",
+        "log_debug",
+        "net_send",
+        "file_write"
+      ],
+      "zeroizers": [
+        "secure_zeroize"
+      ],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    }
+  ],
+  "zeroizers": [
+    "secure_zeroize"
+  ],
+  "protection_domains": {
+    "variables": [
+      {
+        "name": "shared_secret",
+        "domain": "mlkem_shared_secret"
+      }
+    ],
+    "transitions": [
+      {
+        "function": "derive_session_key",
+        "from": "mlkem_shared_secret",
+        "to": "session_key"
+      },
+      {
+        "function": "secure_zeroize",
+        "from": "mlkem_shared_secret",
+        "to": "destroyed",
+        "output": "argument"
+      }
+    ],
+    "allowed_sinks": [
+      {
+        "domain": "session_key",
+        "functions": [
+          "aead_init",
+          "tls13_key_schedule"
+        ]
+      }
+    ],
+    "forbidden_sinks": [
+      {
+        "domain": "mlkem_shared_secret",
+        "functions": [
+          "print",
+          "log_debug",
+          "net_send",
+          "file_write"
+        ]
+      },
+      {
+        "domain": "session_key",
+        "functions": [
+          "print",
+          "log_debug",
+          "net_send",
+          "file_write"
+        ]
+      },
+      {
+        "domain": "destroyed",
+        "functions": [
+          "print",
+          "log_debug",
+          "net_send",
+          "file_write",
+          "aead_init",
+          "tls13_key_schedule"
+        ]
+      }
+    ],
+    "destroyed_domain": "destroyed"
+  }
+}

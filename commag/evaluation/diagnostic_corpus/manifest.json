@@ -1,0 +1,101 @@
+{
+  "suite_name": "diagnostic_corpus_v1",
+  "total_cases": 10,
+  "cases": [
+    {
+      "case_id": "diag_01_clean_protocol",
+      "type": "clean",
+      "file": "diagnostic_corpus/diag_01_clean_protocol/source.py",
+      "contract": "diagnostic_corpus/diag_01_clean_protocol/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "diag_02_secret_key_net_send",
+      "type": "violating",
+      "category": "direct_leak",
+      "file": "diagnostic_corpus/diag_02_secret_key_net_send/source.py",
+      "contract": "diagnostic_corpus/diag_02_secret_key_net_send/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "diag_03_score_leak",
+      "type": "violating",
+      "category": "direct_leak",
+      "file": "diagnostic_corpus/diag_03_score_leak/source.py",
+      "contract": "diagnostic_corpus/diag_03_score_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ]
+    },
+    {
+      "case_id": "diag_04_multihop_key_leak",
+      "type": "violating",
+      "category": "helper_forward",
+      "file": "diagnostic_corpus/diag_04_multihop_key_leak/main.py",
+      "contract": "diagnostic_corpus/diag_04_multihop_key_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "diag_05_multihop_clean",
+      "type": "clean",
+      "file": "diagnostic_corpus/diag_05_multihop_clean/main.py",
+      "contract": "diagnostic_corpus/diag_05_multihop_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "diag_06_key_use_after_destroy",
+      "type": "violating",
+      "category": "use_after_destroy",
+      "file": "diagnostic_corpus/diag_06_key_use_after_destroy/source.py",
+      "contract": "diagnostic_corpus/diag_06_key_use_after_destroy/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink",
+        "missing-zeroize",
+        "use-after-zeroize"
+      ]
+    },
+    {
+      "case_id": "diag_07_class_wrapper_clean",
+      "type": "clean",
+      "file": "diagnostic_corpus/diag_07_class_wrapper_clean/source.py",
+      "contract": "diagnostic_corpus/diag_07_class_wrapper_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "diag_08_class_wrapper_leak",
+      "type": "violating",
+      "category": "container_taint",
+      "file": "diagnostic_corpus/diag_08_class_wrapper_leak/source.py",
+      "contract": "diagnostic_corpus/diag_08_class_wrapper_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "diag_09_while_clean",
+      "type": "clean",
+      "file": "diagnostic_corpus/diag_09_while_clean/source.py",
+      "contract": "diagnostic_corpus/diag_09_while_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "diag_10_while_leak",
+      "type": "violating",
+      "category": "loop_accumulator",
+      "file": "diagnostic_corpus/diag_10_while_leak/source.py",
+      "contract": "diagnostic_corpus/diag_10_while_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    }
+  ]
+}

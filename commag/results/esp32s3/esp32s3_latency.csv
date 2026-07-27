@@ -1,0 +1,2 @@
+sequence,msg_gen_ms,serial_tx_ms,edge_rx_ms,edge_proc_ms,total_latency_ms
+1,0.5,1.2,0.3,6.404,8.404

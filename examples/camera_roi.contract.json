@@ -1,0 +1,15 @@
+{
+  "module": "camera_roi",
+  "buffers": [
+    {
+      "name": "roi",
+      "element_type": "uint8_t",
+      "sensitive": true,
+      "must_zeroize": true,
+      "forbid_post_send_use": true,
+      "allowed_sinks": ["cpd_verifier_send_roi"],
+      "forbidden_sinks": ["net_send"],
+      "transport_sink": "net_send_encrypted"
+    }
+  ]
+}

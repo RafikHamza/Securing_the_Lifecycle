@@ -1,0 +1,4 @@
+suite,total_cases,case_accuracy,precision,recall,f1,total_time_ms
+dev_corpus,20,0.75,0.8182,0.8571,0.8372,10.543
+diagnostic_corpus,10,0.4,0.625,0.7692,0.6897,4.741
+semgrep_baseline,0,N/A,NOT_RUN,NOT_RUN,NOT_RUN,N/A

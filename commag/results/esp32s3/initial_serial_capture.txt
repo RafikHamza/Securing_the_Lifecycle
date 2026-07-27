@@ -1,0 +1,19 @@
+========================================
+ESP32-S3 cycle measurement
+Run: 195/200
+CPU Frequency (MHz): 240
+Iterations: 20
+VH sparse CT mode: fast sparse
+
+baseline crypto_kem_dec avg cycles: 4196750
+baseline min cycles: 4195121
+baseline max cycles: 4196987
+baseline avg time (us): 17486.46
+
+vh_decaps_device avg cycles: 1536863
+vh_decaps_device min cycles: 1530333
+vh_decaps_device max cycles: 1539141
+vh_decaps_device avg time (us): 6403.60
+========================================
+
+{"schema_version":1,"type":"vh-mlkem-esp32s3-bench","build":"Jul  7 2026 14:06:46","chip_model":"ESP32-S3","chip_revision":0,"flash_size_bytes":16777216,"sdk_version":"v4.4.7-dirty","cpu_mhz":240,"run_id":195,"run_total":200,"iterations":20,"setup_ok":true,"param_set":1024,"w_d":32,"sparse_ct":0,"alpha_shift":142,"alpha_sign":-1,"energy_est_enabled":false,"vh_decaps_rc":0,"vh_ss_match":true,"vh_avg_cycles":1536863,"vh_min_cycles":1530333,"vh_max_cycles":1539141,"vh_avg_time_us":6403.60,"vh_energy_uJ_est":0.00,"baseline_avg_cycles":4196750}

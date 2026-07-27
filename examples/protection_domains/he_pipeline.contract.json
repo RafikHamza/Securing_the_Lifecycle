@@ -1,0 +1,132 @@
+{
+  "schema_version": "2.1",
+  "module": "he_pipeline",
+  "secrets": [
+    {
+      "name": "features",
+      "kind": "ppml_feature_vector",
+      "allowed_transforms": [
+        "ckks_encrypt"
+      ],
+      "allowed_sinks": [],
+      "forbidden_sinks": [
+        "print",
+        "logging.*",
+        "net_send",
+        "store_plaintext",
+        "file_write"
+      ],
+      "zeroizers": [
+        "secure_zeroize"
+      ],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    }
+  ],
+  "zeroizers": [
+    "secure_zeroize"
+  ],
+  "protection_domains": {
+    "variables": [
+      {
+        "name": "features",
+        "domain": "raw"
+      }
+    ],
+    "transitions": [
+      {
+        "function": "ckks_encrypt",
+        "from": "raw",
+        "to": "ckks_ciphertext[pk_A]"
+      },
+      {
+        "function": "ckks_eval_add",
+        "from": "ckks_ciphertext[pk_A]",
+        "to": "ckks_ciphertext[pk_A]"
+      },
+      {
+        "function": "ckks_eval_mul",
+        "from": "ckks_ciphertext[pk_A]",
+        "to": "ckks_ciphertext[pk_A]"
+      },
+      {
+        "function": "ckks_bootstrap",
+        "from": "ckks_ciphertext[pk_A]",
+        "to": "ckks_ciphertext[pk_A]"
+      },
+      {
+        "function": "proxy_reencrypt_A_to_B",
+        "from": "ckks_ciphertext[pk_A]",
+        "to": "ckks_ciphertext[pk_B]"
+      },
+      {
+        "function": "ckks_decrypt_A",
+        "from": "ckks_ciphertext[pk_A]",
+        "to": "raw"
+      },
+      {
+        "function": "secure_zeroize",
+        "from": "raw",
+        "to": "destroyed",
+        "output": "argument"
+      }
+    ],
+    "allowed_sinks": [
+      {
+        "domain": "ckks_ciphertext[pk_A]",
+        "functions": [
+          "store_ciphertext",
+          "net_send_ciphertext"
+        ]
+      },
+      {
+        "domain": "ckks_ciphertext[pk_B]",
+        "functions": [
+          "store_ciphertext",
+          "net_send_ciphertext"
+        ]
+      }
+    ],
+    "forbidden_sinks": [
+      {
+        "domain": "raw",
+        "functions": [
+          "print",
+          "logging.*",
+          "net_send",
+          "store_plaintext",
+          "file_write"
+        ]
+      },
+      {
+        "domain": "ckks_ciphertext[pk_A]",
+        "functions": [
+          "print",
+          "logging.*",
+          "store_plaintext"
+        ]
+      },
+      {
+        "domain": "ckks_ciphertext[pk_B]",
+        "functions": [
+          "print",
+          "logging.*",
+          "store_plaintext"
+        ]
+      },
+      {
+        "domain": "destroyed",
+        "functions": [
+          "print",
+          "log_debug",
+          "net_send",
+          "file_write",
+          "plaintext_store",
+          "ckks_encrypt"
+        ]
+      }
+    ],
+    "destroyed_domain": "destroyed"
+  }
+}

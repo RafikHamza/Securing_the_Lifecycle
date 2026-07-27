@@ -1,0 +1,11 @@
+# Optional dependencies for non-default artifact phases.
+# These are not required for the default replication harness.
+# Install clang Python bindings through scripts/setup_rpi4_libclang.sh so they match the native libclang version.
+semgrep>=1.167.0
+pyserial>=3.5
+platformio>=6.1.19
+esptool>=5.2.0
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.2
+tqdm>=4.66

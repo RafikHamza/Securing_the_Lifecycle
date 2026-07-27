@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "captured_at_utc": "2026-07-25T03:25:42.587702+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.3",
+  "tenseal_version": "0.3.16",
+  "ml_kem_variant": "ML-KEM-1024",
+  "cloud_context_has_secret_key": false,
+  "repeats": 10,
+  "mean_ms_for_two_complete_outcomes": 1393.69098,
+  "median_ms_for_two_complete_outcomes": 1406.1185,
+  "min_ms": 1302.9263,
+  "max_ms": 1462.8557,
+  "outcomes": [
+    {
+      "repeat": 1,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1462.8557
+    },
+    {
+      "repeat": 2,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1361.6166
+    },
+    {
+      "repeat": 3,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1302.9263
+    },
+    {
+      "repeat": 4,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1332.7328
+    },
+    {
+      "repeat": 5,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1346.1112
+    },
+    {
+      "repeat": 6,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1409.7759
+    },
+    {
+      "repeat": 7,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1460.2952
+    },
+    {
+      "repeat": 8,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1448.3591
+    },
+    {
+      "repeat": 9,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1403.6012
+    },
+    {
+      "repeat": 10,
+      "low": "CONTINUE_NORMAL",
+      "high": "EMERGENCY_STOP",
+      "elapsed_ms": 1408.6358
+    }
+  ],
+  "source_hashes": {
+    "edge_gateway.py": "bb432d1b03ec5c470c6db5a8f633fa4f908950e4a20e2a3799d85ad2df56c613",
+    "cloud_coordinator.py": "cd7a2943ca73f80acd17b34ec30867f2a92fa721c10406aa14b59b4817082b4b",
+    "actuator_emulator.py": "73fae271687d25a815ea0341331570061e2300dc6510aa0ba046d7595ceaac35",
+    "clean_scenario.py": "dd6d3ebf87dd91bb7548b876b20cda60d424d59665824153de5497748a50d82a",
+    "validation_script": "2df72046563c65cfa39d03a3525015e521a386aed11ec63fdeb977cf1f523c02"
+  }
+}

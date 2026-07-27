@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "module": "mlkem_lifecycle",
+  "secrets": [
+    {
+      "name": "shared_secret",
+      "kind": "kem_shared_secret",
+      "element_type": "uint8_t[32]",
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true,
+      "allowed_transforms": [
+        "derive_session_key",
+        "hkdf_extract"
+      ],
+      "allowed_sinks": [
+        "tls_send_encrypted",
+        "aead_encrypt"
+      ],
+      "forbidden_sinks": [
+        "@logging",
+        "@network",
+        "@uart_debug",
+        "@flash_storage",
+        "debug_dump"
+      ],
+      "zeroizers": [
+        "secure_zeroize",
+        "explicit_bzero",
+        "mbedtls_platform_zeroize"
+      ]
+    },
+    {
+      "name": "session_key",
+      "kind": "derived_session_key",
+      "element_type": "uint8_t[32]",
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true,
+      "allowed_transforms": [
+        "derive_session_key",
+        "hkdf_expand"
+      ],
+      "allowed_sinks": [
+        "tls_send_encrypted",
+        "aead_encrypt"
+      ],
+      "forbidden_sinks": [
+        "@logging",
+        "@network",
+        "@uart_debug",
+        "@flash_storage",
+        "debug_dump"
+      ],
+      "zeroizers": [
+        "secure_zeroize",
+        "explicit_bzero",
+        "mbedtls_platform_zeroize"
+      ]
+    }
+  ]
+}

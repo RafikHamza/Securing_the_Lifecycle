@@ -1,0 +1,212 @@
+{
+  "schema_version": "2.1",
+  "module": "eval_module",
+  "secrets": [
+    {
+      "name": "raw_media",
+      "kind": "raw_media",
+      "allowed_transforms": [
+        "extract_feature"
+      ],
+      "allowed_sinks": [],
+      "forbidden_sinks": [
+        "net_send",
+        "cloud_transmit"
+      ],
+      "zeroizers": [
+        "destroy_buffer"
+      ],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": true,
+      "forbid_use_after_zeroize": true
+    },
+    {
+      "name": "secret_key",
+      "kind": "session_key",
+      "allowed_transforms": [],
+      "allowed_sinks": [
+        "authenticate_msg"
+      ],
+      "forbidden_sinks": [
+        "net_send",
+        "cloud_transmit"
+      ],
+      "zeroizers": [
+        "destroy_buffer"
+      ],
+      "must_zeroize": true,
+      "forbid_post_exposure_use": false,
+      "forbid_use_after_zeroize": true
+    }
+  ],
+  "zeroizers": [
+    "destroy_buffer"
+  ],
+  "protection_domains": {
+    "variables": [
+      {
+        "name": "raw_media",
+        "domain": "raw_media"
+      },
+      {
+        "name": "feat",
+        "domain": "feature_data"
+      },
+      {
+        "name": "enc",
+        "domain": "ckks_ciphertext[evaluation_context]"
+      },
+      {
+        "name": "enc_score",
+        "domain": "encrypted_safety_score[evaluation_context]"
+      },
+      {
+        "name": "score",
+        "domain": "local_plaintext_safety_score"
+      },
+      {
+        "name": "cmd",
+        "domain": "network_control"
+      },
+      {
+        "name": "auth_cmd",
+        "domain": "authenticated_control"
+      },
+      {
+        "name": "fresh_cmd",
+        "domain": "fresh_control"
+      },
+      {
+        "name": "secret_key",
+        "domain": "session_key"
+      },
+      {
+        "name": "destroyed_buf",
+        "domain": "destroyed"
+      }
+    ],
+    "transitions": [
+      {
+        "function": "extract_feature",
+        "from": "raw_media",
+        "to": "feature_data"
+      },
+      {
+        "function": "encrypt_edge",
+        "from": "feature_data",
+        "to": "ckks_ciphertext[evaluation_context]"
+      },
+      {
+        "function": "eval_score",
+        "from": "ckks_ciphertext[evaluation_context]",
+        "to": "encrypted_safety_score[evaluation_context]"
+      },
+      {
+        "function": "decrypt_score",
+        "from": "encrypted_safety_score[evaluation_context]",
+        "to": "local_plaintext_safety_score"
+      },
+      {
+        "function": "apply_policy",
+        "from": "local_plaintext_safety_score",
+        "to": "network_control"
+      },
+      {
+        "function": "authenticate_msg",
+        "from": "network_control",
+        "to": "authenticated_control"
+      },
+      {
+        "function": "verify_freshness",
+        "from": "authenticated_control",
+        "to": "fresh_control"
+      },
+      {
+        "function": "destroy_buffer",
+        "from": "raw_media",
+        "to": "destroyed",
+        "output": "argument"
+      },
+      {
+        "function": "destroy_buffer",
+        "from": "secret_key",
+        "to": "destroyed",
+        "output": "argument"
+      }
+    ],
+    "allowed_sinks": [
+      {
+        "domain": "ckks_ciphertext[evaluation_context]",
+        "functions": [
+          "cloud_transmit",
+          "eval_score"
+        ]
+      },
+      {
+        "domain": "encrypted_safety_score[evaluation_context]",
+        "functions": [
+          "decrypt_score"
+        ]
+      },
+      {
+        "domain": "local_plaintext_safety_score",
+        "functions": [
+          "apply_policy"
+        ]
+      },
+      {
+        "domain": "fresh_control",
+        "functions": [
+          "actuate"
+        ]
+      }
+    ],
+    "forbidden_sinks": [
+      {
+        "domain": "raw_media",
+        "functions": [
+          "net_send",
+          "cloud_transmit"
+        ]
+      },
+      {
+        "domain": "session_key",
+        "functions": [
+          "net_send",
+          "cloud_transmit"
+        ]
+      },
+      {
+        "domain": "local_plaintext_safety_score",
+        "functions": [
+          "net_send",
+          "cloud_transmit",
+          "actuate"
+        ]
+      },
+      {
+        "domain": "network_control",
+        "functions": [
+          "actuate"
+        ]
+      },
+      {
+        "domain": "authenticated_control",
+        "functions": [
+          "actuate"
+        ]
+      },
+      {
+        "domain": "destroyed",
+        "functions": [
+          "net_send",
+          "cloud_transmit",
+          "actuate",
+          "apply_policy",
+          "authenticate_msg"
+        ]
+      }
+    ],
+    "destroyed_domain": "destroyed"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "mode": "curated_python_static_verification",
+  "total_cases": 7,
+  "passed_cases": 7,
+  "all_warning_sets_exact": true,
+  "total_local_verification_time_ms": 9.127369,
+  "rpi4_physical_evidence_available": true,
+  "real_crypto_evidence_available": true,
+  "esp32s3_aggregate_timing_available": false,
+  "evidence_files": [
+    "results/commag/security_cases.json",
+    "results/commag/real_crypto_validation.json",
+    "results/rpi4/rpi4_summary.json",
+    "results/rpi4/rpi4_raw_runs.json",
+    "results/commag/scaling_benchmark.csv",
+    "results/commag/evaluation_results.json"
+  ],
+  "scope_note": "Local timings are static source-verifier executions only. Physical Raspberry Pi and real-cryptography evidence are recorded separately."
+}

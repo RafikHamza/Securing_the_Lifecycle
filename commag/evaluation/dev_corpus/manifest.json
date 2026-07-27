@@ -1,0 +1,191 @@
+{
+  "suite_name": "dev_corpus_v1",
+  "total_cases": 20,
+  "cases": [
+    {
+      "case_id": "dev_01_clean_direct",
+      "type": "clean",
+      "file": "dev_corpus/dev_01_clean_direct/source.py",
+      "contract": "dev_corpus/dev_01_clean_direct/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_02_raw_media_leak",
+      "type": "violating",
+      "category": "direct_leak",
+      "file": "dev_corpus/dev_02_raw_media_leak/source.py",
+      "contract": "dev_corpus/dev_02_raw_media_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_03_missing_zeroize",
+      "type": "violating",
+      "category": "missing_zeroize",
+      "file": "dev_corpus/dev_03_missing_zeroize/source.py",
+      "contract": "dev_corpus/dev_03_missing_zeroize/contract.json",
+      "expected_warnings": [
+        "missing-zeroize"
+      ]
+    },
+    {
+      "case_id": "dev_04_use_after_destroy",
+      "type": "violating",
+      "category": "use_after_destroy",
+      "file": "dev_corpus/dev_04_use_after_destroy/source.py",
+      "contract": "dev_corpus/dev_04_use_after_destroy/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink",
+        "missing-zeroize",
+        "use-after-zeroize"
+      ]
+    },
+    {
+      "case_id": "dev_05_unauth_actuate",
+      "type": "violating",
+      "category": "unauthorized_transition",
+      "file": "dev_corpus/dev_05_unauth_actuate/source.py",
+      "contract": "dev_corpus/dev_05_unauth_actuate/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ]
+    },
+    {
+      "case_id": "dev_06_helper_forward_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_06_helper_forward_clean/source.py",
+      "contract": "dev_corpus/dev_06_helper_forward_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_07_helper_forward_leak",
+      "type": "violating",
+      "category": "helper_forward",
+      "file": "dev_corpus/dev_07_helper_forward_leak/source.py",
+      "contract": "dev_corpus/dev_07_helper_forward_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_08_branch_missing_zeroize",
+      "type": "violating",
+      "category": "branch_discrepancy",
+      "file": "dev_corpus/dev_08_branch_missing_zeroize/source.py",
+      "contract": "dev_corpus/dev_08_branch_missing_zeroize/contract.json",
+      "expected_warnings": [
+        "missing-zeroize"
+      ]
+    },
+    {
+      "case_id": "dev_09_branch_clean_zeroize",
+      "type": "clean",
+      "file": "dev_corpus/dev_09_branch_clean_zeroize/source.py",
+      "contract": "dev_corpus/dev_09_branch_clean_zeroize/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_10_alias_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_10_alias_clean/source.py",
+      "contract": "dev_corpus/dev_10_alias_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_11_alias_leak",
+      "type": "violating",
+      "category": "aliasing",
+      "file": "dev_corpus/dev_11_alias_leak/source.py",
+      "contract": "dev_corpus/dev_11_alias_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_12_loop_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_12_loop_clean/source.py",
+      "contract": "dev_corpus/dev_12_loop_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_13_loop_leak",
+      "type": "violating",
+      "category": "loop_accumulator",
+      "file": "dev_corpus/dev_13_loop_leak/source.py",
+      "contract": "dev_corpus/dev_13_loop_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_14_container_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_14_container_clean/source.py",
+      "contract": "dev_corpus/dev_14_container_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_15_container_leak",
+      "type": "violating",
+      "category": "container_taint",
+      "file": "dev_corpus/dev_15_container_leak/source.py",
+      "contract": "dev_corpus/dev_15_container_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_16_multifile_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_16_multifile_clean/main.py",
+      "contract": "dev_corpus/dev_16_multifile_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_17_multifile_leak",
+      "type": "violating",
+      "category": "multifile_flow",
+      "file": "dev_corpus/dev_17_multifile_leak/main.py",
+      "contract": "dev_corpus/dev_17_multifile_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_18_callback_clean",
+      "type": "clean",
+      "file": "dev_corpus/dev_18_callback_clean/source.py",
+      "contract": "dev_corpus/dev_18_callback_clean/contract.json",
+      "expected_warnings": []
+    },
+    {
+      "case_id": "dev_19_callback_leak",
+      "type": "violating",
+      "category": "callback_capture",
+      "file": "dev_corpus/dev_19_callback_leak/source.py",
+      "contract": "dev_corpus/dev_19_callback_leak/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink",
+        "forbidden-sink"
+      ]
+    },
+    {
+      "case_id": "dev_20_unencrypted_score_actuate",
+      "type": "violating",
+      "category": "unauthorized_transition",
+      "file": "dev_corpus/dev_20_unencrypted_score_actuate/source.py",
+      "contract": "dev_corpus/dev_20_unencrypted_score_actuate/contract.json",
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ]
+    }
+  ]
+}

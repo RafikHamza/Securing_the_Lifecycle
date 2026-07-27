@@ -1,0 +1,2 @@
+device_id,sequence,sensor_timestamp_ms,vh_avg_cycles,vh_avg_time_us,baseline_avg_cycles,machine_state
+esp32s3-node-01,1,1784888319431,1536863,6403.6,4196750,running

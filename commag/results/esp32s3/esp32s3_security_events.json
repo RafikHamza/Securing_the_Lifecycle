@@ -1,0 +1,9 @@
+{
+  "device_id": "esp32s3-node-01",
+  "serial_port": "COM8",
+  "serial_errors": 0,
+  "dropped_messages": 0,
+  "duplicate_sequences": 0,
+  "replayed_commands": 0,
+  "cpd_verifier_contract_status": "PASS"
+}

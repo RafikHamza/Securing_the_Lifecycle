@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "physical_platform_verified": true,
+  "scope": "Python static verifier only",
+  "total_cases": 7,
+  "repeats_per_case": 30,
+  "total_measurements": 210,
+  "all_warning_sets_exact": true,
+  "peak_rss_mb": 24.684,
+  "cases": [
+    {
+      "case_id": "clean_safety_loop",
+      "source": "commag/scenario/clean_scenario.py",
+      "source_sha256": "dd6d3ebf87dd91bb7548b876b20cda60d424d59665824153de5497748a50d82a",
+      "repeats": 30,
+      "expected_warnings": [],
+      "observed_warnings": [],
+      "mean_ms": 19.624257,
+      "median_ms": 19.396964,
+      "stdev_ms": 0.429977,
+      "min_ms": 19.222976,
+      "max_ms": 20.872433,
+      "p95_ms": 20.27088,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_1_raw_media_leak",
+      "source": "commag/attacks/raw_media_leak.py",
+      "source_sha256": "1fafa0a03afe2495d659baf172938cadee75f4ec4799a98748564b8568050369",
+      "repeats": 30,
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "observed_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "mean_ms": 2.649505,
+      "median_ms": 2.594657,
+      "stdev_ms": 0.232818,
+      "min_ms": 2.53337,
+      "max_ms": 3.849202,
+      "p95_ms": 2.719893,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_2_wrong_he_transition",
+      "source": "commag/attacks/wrong_he_transition.py",
+      "source_sha256": "cb16d989e6b27e62a54927ee936826a2efbcc4489705cb87b4f72f01d54fcdb5",
+      "repeats": 30,
+      "expected_warnings": [
+        "unauthorized-domain-transition"
+      ],
+      "observed_warnings": [
+        "unauthorized-domain-transition"
+      ],
+      "mean_ms": 6.751901,
+      "median_ms": 6.631949,
+      "stdev_ms": 0.402165,
+      "min_ms": 6.568126,
+      "max_ms": 8.600374,
+      "p95_ms": 7.326017,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_3_shared_secret_send",
+      "source": "commag/attacks/shared_secret_send.py",
+      "source_sha256": "d6e88762dfeb9c7dc8714e80a008cb9b46dc481af162d9bd45856582a2de212c",
+      "repeats": 30,
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "observed_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "mean_ms": 2.213193,
+      "median_ms": 2.134699,
+      "stdev_ms": 0.2517,
+      "min_ms": 2.073932,
+      "max_ms": 3.376247,
+      "p95_ms": 2.591666,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_4_unauthenticated_control",
+      "source": "commag/attacks/unauthenticated_control.py",
+      "source_sha256": "157e33bd601d4ad8caeb6758bbb1a78822d798b54c7f534671574bfbf24153d4",
+      "repeats": 30,
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "observed_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "mean_ms": 2.273215,
+      "median_ms": 2.227661,
+      "stdev_ms": 0.248587,
+      "min_ms": 2.171616,
+      "max_ms": 3.570317,
+      "p95_ms": 2.330843,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_5_replayed_control",
+      "source": "commag/attacks/replayed_control.py",
+      "source_sha256": "2742ebc8e27649657675af685bd71cf6a5a695a6035d519b282a7bc91a0ed20e",
+      "repeats": 30,
+      "expected_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "observed_warnings": [
+        "forbidden-domain-sink"
+      ],
+      "mean_ms": 4.813387,
+      "median_ms": 4.708412,
+      "stdev_ms": 0.351132,
+      "min_ms": 4.65171,
+      "max_ms": 6.149854,
+      "p95_ms": 5.509112,
+      "status": "PASS"
+    },
+    {
+      "case_id": "misuse_6_post_destroy_use",
+      "source": "commag/attacks/post_destroy_use.py",
+      "source_sha256": "39a87b15aa1c205d6187ca00dc7e3de68aa3841d720f94469591dff2040e4a29",
+      "repeats": 30,
+      "expected_warnings": [
+        "missing-zeroize",
+        "unauthorized-domain-transition",
+        "use-after-zeroize"
+      ],
+      "observed_warnings": [
+        "missing-zeroize",
+        "unauthorized-domain-transition",
+        "use-after-zeroize"
+      ],
+      "mean_ms": 2.680074,
+      "median_ms": 2.632822,
+      "stdev_ms": 0.256561,
+      "min_ms": 2.572685,
+      "max_ms": 4.025663,
+      "p95_ms": 2.720495,
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "captured_at_utc": "2026-07-25T03:31:28.309462+00:00",
+    "platform": "Linux-6.18.34+rpt-rpi-v8-aarch64-with-glibc2.41",
+    "python": "3.13.5",
+    "hostname_redacted": true,
+    "raspberry_pi": {
+      "model": "Raspberry Pi 4 Model B Rev 1.5",
+      "machine": "aarch64",
+      "is_raspberry_pi_4": true
+    },
+    "uname": "Linux <redacted-hostname> 6.18.34+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.18.34-1+rpt1 (2026-06-09) aarch64 GNU/Linux",
+    "os_release": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"13\"\nVERSION=\"13 (trixie)\"\nVERSION_CODENAME=trixie\nDEBIAN_VERSION_FULL=13.5\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"",
+    "cpu_info": "Architecture:                            aarch64\nCPU op-mode(s):                          32-bit, 64-bit\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               ARM\nModel name:                              Cortex-A72\nModel:                                   3\nThread(s) per core:                      1\nCore(s) per cluster:                     4\nSocket(s):                               -\nCluster(s):                              1\nStepping:                                r0p3\nFrequency boost:                         disabled\nCPU(s) scaling MHz:                      100%\nCPU max MHz:                             1800.0000\nCPU min MHz:                             600.0000\nBogoMIPS:                                108.00\nFlags:                                   fp asimd evtstrm crc32 cpuid\nL1d cache:                               128 KiB (4 instances)\nL1i cache:                               192 KiB (4 instances)\nL2 cache:                                1 MiB (1 instance)\nNUMA node(s):                            2\nNUMA node0 CPU(s):                       0-3\nNUMA node1 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Vulnerable\nVulnerability Spectre v1:                Mitigation; __user pointer sanitization\nVulnerability Spectre v2:                Vulnerable\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+    "memory_info": "total        used        free      shared  buff/cache   available\nMem:           7.6Gi       473Mi       4.2Gi        44Mi       3.1Gi       7.2Gi\nSwap:          2.0Gi          0B       2.0Gi",
+    "git_commit": "not-a-git-checkout",
+    "libclang_required_for_this_run": false,
+    "analysis_scope": "Python AST verifier over seven ComMag scenario files"
+  },
+  "hashes": {
+    "collector_sha256": "81e9a6eac1d00319a5fc778c081b8d7d34d87435c292d1f9cd39366d7f19f41e",
+    "verifier_sha256": "2b89380efa0ac1782604bb0682f3f0368e3fa4c125db46128a4f001847c8683f",
+    "contract_sha256": "406b43de19baa25df3268581ae841741ef95d043674de076f95e023d295f181a"
+  },
+  "publication_redaction": {
+    "hostname_redacted": true,
+    "original_evidence_zip_sha256": "68bb266e4e874c4e37deb82e69d7db73be6b0034309b28e3f0b9d75f3a989a50",
+    "redaction_scope": "hostname only; timings, warning sets, source hashes, platform model, and software environment unchanged"
+  }
+}

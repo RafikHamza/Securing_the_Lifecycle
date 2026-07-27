@@ -1,0 +1,32 @@
+[
+  {
+    "target_loc": 100,
+    "actual_loc": 48,
+    "file": "scaling_corpus/scale_100_loc.py",
+    "contract": "dev_corpus/dev_01_clean_direct/contract.json"
+  },
+  {
+    "target_loc": 500,
+    "actual_loc": 237,
+    "file": "scaling_corpus/scale_500_loc.py",
+    "contract": "dev_corpus/dev_01_clean_direct/contract.json"
+  },
+  {
+    "target_loc": 1000,
+    "actual_loc": 468,
+    "file": "scaling_corpus/scale_1000_loc.py",
+    "contract": "dev_corpus/dev_01_clean_direct/contract.json"
+  },
+  {
+    "target_loc": 2500,
+    "actual_loc": 1168,
+    "file": "scaling_corpus/scale_2500_loc.py",
+    "contract": "dev_corpus/dev_01_clean_direct/contract.json"
+  },
+  {
+    "target_loc": 5000,
+    "actual_loc": 2337,
+    "file": "scaling_corpus/scale_5000_loc.py",
+    "contract": "dev_corpus/dev_01_clean_direct/contract.json"
+  }
+]

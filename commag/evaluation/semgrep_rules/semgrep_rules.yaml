@@ -1,0 +1,25 @@
+rules:
+  - id: direct-media-network-leak
+    patterns:
+      - pattern-either:
+          - pattern: cloud_transmit($RAW)
+          - pattern: net_send($RAW)
+    message: Direct leakage of raw media or secret key over network sink.
+    languages: [python]
+    severity: ERROR
+
+  - id: unauthenticated-actuation
+    patterns:
+      - pattern: actuate($CMD)
+    message: Control command passed directly to actuation sink.
+    languages: [python]
+    severity: ERROR
+
+  - id: missing-zeroization-check
+    patterns:
+      - pattern-not-inside:
+          - destroy_buffer(...)
+      - pattern: return ...
+    message: Sensitive buffer missing explicit zeroization.
+    languages: [python]
+    severity: WARNING

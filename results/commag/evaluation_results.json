@@ -1,0 +1,768 @@
+{
+  "verifier_sha256": "2b89380efa0ac1782604bb0682f3f0368e3fa4c125db46128a4f001847c8683f",
+  "dev_corpus": {
+    "suite_type": "dev_corpus",
+    "total_cases": 20,
+    "case_accuracy": 0.75,
+    "total_tp": 18,
+    "total_fp": 4,
+    "total_fn": 3,
+    "total_tn": 5,
+    "precision": 0.8182,
+    "recall": 0.8571,
+    "f1": 0.8372,
+    "total_time_ms": 10.543,
+    "cases": [
+      {
+        "case_id": "dev_01_clean_direct",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 14,
+        "ast_nodes": 96,
+        "expected_warnings": [],
+        "observed_warnings": [
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "elapsed_ms": 2.622
+      },
+      {
+        "case_id": "dev_02_raw_media_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "direct_leak",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.399
+      },
+      {
+        "case_id": "dev_03_missing_zeroize",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "missing_zeroize",
+        "loc": 5,
+        "ast_nodes": 17,
+        "expected_warnings": [
+          "missing-zeroize"
+        ],
+        "observed_warnings": [
+          "missing-zeroize"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.345
+      },
+      {
+        "case_id": "dev_04_use_after_destroy",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "use_after_destroy",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "missing-zeroize",
+          "use-after-zeroize"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "case_correct": false,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "elapsed_ms": 0.401
+      },
+      {
+        "case_id": "dev_05_unauth_actuate",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "unauthorized_transition",
+        "loc": 5,
+        "ast_nodes": 20,
+        "expected_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.27
+      },
+      {
+        "case_id": "dev_06_helper_forward_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 9,
+        "ast_nodes": 33,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.603
+      },
+      {
+        "case_id": "dev_07_helper_forward_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "helper_forward",
+        "loc": 8,
+        "ast_nodes": 28,
+        "expected_warnings": [
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.675
+      },
+      {
+        "case_id": "dev_08_branch_missing_zeroize",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "branch_discrepancy",
+        "loc": 9,
+        "ast_nodes": 29,
+        "expected_warnings": [
+          "missing-zeroize"
+        ],
+        "observed_warnings": [
+          "missing-zeroize"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.428
+      },
+      {
+        "case_id": "dev_09_branch_clean_zeroize",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 9,
+        "ast_nodes": 34,
+        "expected_warnings": [],
+        "observed_warnings": [
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "elapsed_ms": 0.485
+      },
+      {
+        "case_id": "dev_10_alias_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 5,
+        "ast_nodes": 17,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.307
+      },
+      {
+        "case_id": "dev_11_alias_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "aliasing",
+        "loc": 6,
+        "ast_nodes": 24,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.374
+      },
+      {
+        "case_id": "dev_12_loop_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 7,
+        "ast_nodes": 31,
+        "expected_warnings": [],
+        "observed_warnings": [
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "elapsed_ms": 0.493
+      },
+      {
+        "case_id": "dev_13_loop_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "loop_accumulator",
+        "loc": 6,
+        "ast_nodes": 26,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "post-send-use"
+        ],
+        "case_correct": false,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "elapsed_ms": 0.469
+      },
+      {
+        "case_id": "dev_14_container_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 7,
+        "ast_nodes": 34,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.462
+      },
+      {
+        "case_id": "dev_15_container_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "container_taint",
+        "loc": 6,
+        "ast_nodes": 29,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.432
+      },
+      {
+        "case_id": "dev_16_multifile_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 7,
+        "ast_nodes": 25,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.425
+      },
+      {
+        "case_id": "dev_17_multifile_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "multifile_flow",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.312
+      },
+      {
+        "case_id": "dev_18_callback_clean",
+        "suite_type": "dev_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 9,
+        "ast_nodes": 36,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.497
+      },
+      {
+        "case_id": "dev_19_callback_leak",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "callback_capture",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.3
+      },
+      {
+        "case_id": "dev_20_unencrypted_score_actuate",
+        "suite_type": "dev_corpus",
+        "type": "violating",
+        "category": "unauthorized_transition",
+        "loc": 5,
+        "ast_nodes": 20,
+        "expected_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.243
+      }
+    ]
+  },
+  "diagnostic_corpus": {
+    "suite_type": "diagnostic_corpus",
+    "total_cases": 10,
+    "case_accuracy": 0.4,
+    "total_tp": 10,
+    "total_fp": 6,
+    "total_fn": 3,
+    "total_tn": 2,
+    "precision": 0.625,
+    "recall": 0.7692,
+    "f1": 0.6897,
+    "total_time_ms": 4.741,
+    "cases": [
+      {
+        "case_id": "diag_01_clean_protocol",
+        "suite_type": "diagnostic_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 13,
+        "ast_nodes": 89,
+        "expected_warnings": [],
+        "observed_warnings": [
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "elapsed_ms": 1.116
+      },
+      {
+        "case_id": "diag_02_secret_key_net_send",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "direct_leak",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "elapsed_ms": 0.312
+      },
+      {
+        "case_id": "diag_03_score_leak",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "direct_leak",
+        "loc": 5,
+        "ast_nodes": 20,
+        "expected_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink"
+        ],
+        "case_correct": true,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.289
+      },
+      {
+        "case_id": "diag_04_multihop_key_leak",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "helper_forward",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "elapsed_ms": 0.482
+      },
+      {
+        "case_id": "diag_05_multihop_clean",
+        "suite_type": "diagnostic_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 7,
+        "ast_nodes": 25,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.338
+      },
+      {
+        "case_id": "diag_06_key_use_after_destroy",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "use_after_destroy",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "missing-zeroize",
+          "use-after-zeroize"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "tn": 0,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333,
+        "elapsed_ms": 0.292
+      },
+      {
+        "case_id": "diag_07_class_wrapper_clean",
+        "suite_type": "diagnostic_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 9,
+        "ast_nodes": 40,
+        "expected_warnings": [],
+        "observed_warnings": [],
+        "case_correct": true,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.6
+      },
+      {
+        "case_id": "diag_08_class_wrapper_leak",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "container_taint",
+        "loc": 5,
+        "ast_nodes": 19,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "case_correct": true,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "elapsed_ms": 0.293
+      },
+      {
+        "case_id": "diag_09_while_clean",
+        "suite_type": "diagnostic_corpus",
+        "type": "clean",
+        "category": "clean",
+        "loc": 9,
+        "ast_nodes": 39,
+        "expected_warnings": [],
+        "observed_warnings": [
+          "unauthorized-domain-transition"
+        ],
+        "case_correct": false,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "elapsed_ms": 0.522
+      },
+      {
+        "case_id": "diag_10_while_leak",
+        "suite_type": "diagnostic_corpus",
+        "type": "violating",
+        "category": "loop_accumulator",
+        "loc": 8,
+        "ast_nodes": 34,
+        "expected_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink"
+        ],
+        "observed_warnings": [
+          "forbidden-domain-sink",
+          "forbidden-sink",
+          "post-send-use"
+        ],
+        "case_correct": false,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "elapsed_ms": 0.495
+      }
+    ]
+  },
+  "semgrep_baseline": {
+    "tool": "Semgrep Baseline",
+    "semgrep_installed": false,
+    "status": "NOT_RUN",
+    "reason": "Semgrep executable was not available; no detection metrics are reported.",
+    "total_cases": 0,
+    "total_tp": null,
+    "total_fp": null,
+    "total_fn": null,
+    "total_tn": null,
+    "precision": null,
+    "recall": null,
+    "f1": null,
+    "cases": []
+  },
+  "scaling_benchmark": [
+    {
+      "target_loc": 100,
+      "actual_loc": 48,
+      "ast_nodes": 267,
+      "verification_time_ms": 4.44,
+      "loc_per_sec": 10809.9
+    },
+    {
+      "target_loc": 500,
+      "actual_loc": 237,
+      "ast_nodes": 1320,
+      "verification_time_ms": 22.268,
+      "loc_per_sec": 10643.2
+    },
+    {
+      "target_loc": 1000,
+      "actual_loc": 468,
+      "ast_nodes": 2607,
+      "verification_time_ms": 40.621,
+      "loc_per_sec": 11521.1
+    },
+    {
+      "target_loc": 2500,
+      "actual_loc": 1168,
+      "ast_nodes": 6507,
+      "verification_time_ms": 136.115,
+      "loc_per_sec": 8581.0
+    },
+    {
+      "target_loc": 5000,
+      "actual_loc": 2337,
+      "ast_nodes": 13020,
+      "verification_time_ms": 207.075,
+      "loc_per_sec": 11285.7
+    }
+  ]
+}

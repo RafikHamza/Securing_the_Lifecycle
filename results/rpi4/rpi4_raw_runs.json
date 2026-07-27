@@ -1,0 +1,2312 @@
+[
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 1,
+    "elapsed_ms": 19.476435,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 2,
+    "elapsed_ms": 19.343196,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 3,
+    "elapsed_ms": 20.074667,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 4,
+    "elapsed_ms": 19.325492,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 5,
+    "elapsed_ms": 19.377881,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 6,
+    "elapsed_ms": 20.075574,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 7,
+    "elapsed_ms": 19.399417,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 8,
+    "elapsed_ms": 19.284346,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 9,
+    "elapsed_ms": 20.248331,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 10,
+    "elapsed_ms": 19.406066,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 11,
+    "elapsed_ms": 19.369844,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 12,
+    "elapsed_ms": 19.275456,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 13,
+    "elapsed_ms": 20.246812,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 14,
+    "elapsed_ms": 19.364399,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 15,
+    "elapsed_ms": 19.316807,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 16,
+    "elapsed_ms": 19.394511,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 17,
+    "elapsed_ms": 20.28933,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 18,
+    "elapsed_ms": 19.30066,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 19,
+    "elapsed_ms": 19.222976,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 20,
+    "elapsed_ms": 19.357363,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 21,
+    "elapsed_ms": 20.872433,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 22,
+    "elapsed_ms": 19.504935,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 23,
+    "elapsed_ms": 19.90491,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 24,
+    "elapsed_ms": 19.546341,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 25,
+    "elapsed_ms": 20.195258,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 26,
+    "elapsed_ms": 19.482935,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 27,
+    "elapsed_ms": 19.336289,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 28,
+    "elapsed_ms": 19.298715,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 29,
+    "elapsed_ms": 20.12024,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "clean_safety_loop",
+    "repeat": 30,
+    "elapsed_ms": 19.316086,
+    "expected_warnings": [],
+    "observed_warnings": []
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 1,
+    "elapsed_ms": 2.644313,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 2,
+    "elapsed_ms": 2.717071,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 3,
+    "elapsed_ms": 2.722201,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 4,
+    "elapsed_ms": 2.683793,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 5,
+    "elapsed_ms": 2.580814,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 6,
+    "elapsed_ms": 2.601609,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 7,
+    "elapsed_ms": 2.597907,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 8,
+    "elapsed_ms": 2.556333,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 9,
+    "elapsed_ms": 2.601647,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 10,
+    "elapsed_ms": 2.567851,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 11,
+    "elapsed_ms": 2.53337,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 12,
+    "elapsed_ms": 2.577369,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 13,
+    "elapsed_ms": 2.576258,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 14,
+    "elapsed_ms": 2.533518,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 15,
+    "elapsed_ms": 2.591406,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 16,
+    "elapsed_ms": 2.58211,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 17,
+    "elapsed_ms": 2.540296,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 18,
+    "elapsed_ms": 2.583796,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 19,
+    "elapsed_ms": 2.578962,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 20,
+    "elapsed_ms": 2.553944,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 21,
+    "elapsed_ms": 2.590332,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 22,
+    "elapsed_ms": 3.849202,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 23,
+    "elapsed_ms": 2.685146,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 24,
+    "elapsed_ms": 2.643665,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 25,
+    "elapsed_ms": 2.678627,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 26,
+    "elapsed_ms": 2.645239,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 27,
+    "elapsed_ms": 2.675442,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 28,
+    "elapsed_ms": 2.639406,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 29,
+    "elapsed_ms": 2.549666,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_1_raw_media_leak",
+    "repeat": 30,
+    "elapsed_ms": 2.603851,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 1,
+    "elapsed_ms": 6.693216,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 2,
+    "elapsed_ms": 6.688901,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 3,
+    "elapsed_ms": 6.632717,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 4,
+    "elapsed_ms": 6.614458,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 5,
+    "elapsed_ms": 6.623957,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 6,
+    "elapsed_ms": 6.649532,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 7,
+    "elapsed_ms": 8.600374,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 8,
+    "elapsed_ms": 6.898602,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 9,
+    "elapsed_ms": 6.625014,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 10,
+    "elapsed_ms": 6.627198,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 11,
+    "elapsed_ms": 6.629514,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 12,
+    "elapsed_ms": 6.65305,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 13,
+    "elapsed_ms": 6.625255,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 14,
+    "elapsed_ms": 6.576792,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 15,
+    "elapsed_ms": 6.653735,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 16,
+    "elapsed_ms": 6.695698,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 17,
+    "elapsed_ms": 6.628069,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 18,
+    "elapsed_ms": 6.634514,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 19,
+    "elapsed_ms": 6.645791,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 20,
+    "elapsed_ms": 6.585791,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 21,
+    "elapsed_ms": 7.67572,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 22,
+    "elapsed_ms": 6.828363,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 23,
+    "elapsed_ms": 6.598106,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 24,
+    "elapsed_ms": 6.608606,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 25,
+    "elapsed_ms": 6.612625,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 26,
+    "elapsed_ms": 6.568126,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 27,
+    "elapsed_ms": 6.63118,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 28,
+    "elapsed_ms": 6.625458,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 29,
+    "elapsed_ms": 6.640588,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_2_wrong_he_transition",
+    "repeat": 30,
+    "elapsed_ms": 6.786067,
+    "expected_warnings": [
+      "unauthorized-domain-transition"
+    ],
+    "observed_warnings": [
+      "unauthorized-domain-transition"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 1,
+    "elapsed_ms": 2.139784,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 2,
+    "elapsed_ms": 2.126598,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 3,
+    "elapsed_ms": 2.124543,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 4,
+    "elapsed_ms": 2.095729,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 5,
+    "elapsed_ms": 2.10345,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 6,
+    "elapsed_ms": 2.08208,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 7,
+    "elapsed_ms": 2.129987,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 8,
+    "elapsed_ms": 2.073932,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 9,
+    "elapsed_ms": 2.113376,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 10,
+    "elapsed_ms": 2.080655,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 11,
+    "elapsed_ms": 3.376247,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 12,
+    "elapsed_ms": 2.279466,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 13,
+    "elapsed_ms": 2.100655,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 14,
+    "elapsed_ms": 2.135154,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 15,
+    "elapsed_ms": 2.182171,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 16,
+    "elapsed_ms": 2.549907,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 17,
+    "elapsed_ms": 2.268374,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 18,
+    "elapsed_ms": 2.183727,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 19,
+    "elapsed_ms": 2.193227,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 20,
+    "elapsed_ms": 2.140561,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 21,
+    "elapsed_ms": 2.625832,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 22,
+    "elapsed_ms": 2.188357,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 23,
+    "elapsed_ms": 2.17869,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 24,
+    "elapsed_ms": 2.132283,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 25,
+    "elapsed_ms": 2.108876,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 26,
+    "elapsed_ms": 2.134653,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 27,
+    "elapsed_ms": 2.129969,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 28,
+    "elapsed_ms": 2.160986,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 29,
+    "elapsed_ms": 2.121783,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_3_shared_secret_send",
+    "repeat": 30,
+    "elapsed_ms": 2.134746,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 1,
+    "elapsed_ms": 2.191375,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 2,
+    "elapsed_ms": 2.241004,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 3,
+    "elapsed_ms": 2.191894,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 4,
+    "elapsed_ms": 2.234689,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 5,
+    "elapsed_ms": 2.17682,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 6,
+    "elapsed_ms": 2.227708,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 7,
+    "elapsed_ms": 2.222245,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 8,
+    "elapsed_ms": 2.294874,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 9,
+    "elapsed_ms": 2.290262,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 10,
+    "elapsed_ms": 2.209152,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 11,
+    "elapsed_ms": 2.231541,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 12,
+    "elapsed_ms": 2.190764,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 13,
+    "elapsed_ms": 2.254244,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 14,
+    "elapsed_ms": 3.570317,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 15,
+    "elapsed_ms": 2.33591,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 16,
+    "elapsed_ms": 2.32465,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 17,
+    "elapsed_ms": 2.280781,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 18,
+    "elapsed_ms": 2.239356,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 19,
+    "elapsed_ms": 2.235819,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 20,
+    "elapsed_ms": 2.194486,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 21,
+    "elapsed_ms": 2.228541,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 22,
+    "elapsed_ms": 2.171616,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 23,
+    "elapsed_ms": 2.214764,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 24,
+    "elapsed_ms": 2.227615,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 25,
+    "elapsed_ms": 2.186801,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 26,
+    "elapsed_ms": 2.208486,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 27,
+    "elapsed_ms": 2.182134,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 28,
+    "elapsed_ms": 2.238004,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 29,
+    "elapsed_ms": 2.177635,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_4_unauthenticated_control",
+    "repeat": 30,
+    "elapsed_ms": 2.222949,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 1,
+    "elapsed_ms": 4.65171,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 2,
+    "elapsed_ms": 4.690024,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 3,
+    "elapsed_ms": 4.660802,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 4,
+    "elapsed_ms": 4.71156,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 5,
+    "elapsed_ms": 4.76543,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 6,
+    "elapsed_ms": 4.765615,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 7,
+    "elapsed_ms": 4.70606,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 8,
+    "elapsed_ms": 6.149854,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 9,
+    "elapsed_ms": 4.853558,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 10,
+    "elapsed_ms": 4.727171,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 11,
+    "elapsed_ms": 4.716208,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 12,
+    "elapsed_ms": 4.695913,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 13,
+    "elapsed_ms": 4.683616,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 14,
+    "elapsed_ms": 4.676246,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 15,
+    "elapsed_ms": 4.660228,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 16,
+    "elapsed_ms": 4.670728,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 17,
+    "elapsed_ms": 4.683523,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 18,
+    "elapsed_ms": 4.678857,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 19,
+    "elapsed_ms": 4.673338,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 20,
+    "elapsed_ms": 4.710764,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 21,
+    "elapsed_ms": 4.800762,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 22,
+    "elapsed_ms": 4.782726,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 23,
+    "elapsed_ms": 4.723486,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 24,
+    "elapsed_ms": 4.678653,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 25,
+    "elapsed_ms": 4.698875,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 26,
+    "elapsed_ms": 4.66932,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 27,
+    "elapsed_ms": 6.019596,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 28,
+    "elapsed_ms": 4.885187,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 29,
+    "elapsed_ms": 4.807466,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_5_replayed_control",
+    "repeat": 30,
+    "elapsed_ms": 4.804337,
+    "expected_warnings": [
+      "forbidden-domain-sink"
+    ],
+    "observed_warnings": [
+      "forbidden-domain-sink"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 1,
+    "elapsed_ms": 2.634073,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 2,
+    "elapsed_ms": 2.59748,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 3,
+    "elapsed_ms": 2.647146,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 4,
+    "elapsed_ms": 2.649221,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 5,
+    "elapsed_ms": 2.584166,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 6,
+    "elapsed_ms": 2.643794,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 7,
+    "elapsed_ms": 2.629258,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 8,
+    "elapsed_ms": 2.596444,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 9,
+    "elapsed_ms": 2.701479,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 10,
+    "elapsed_ms": 2.655035,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 11,
+    "elapsed_ms": 2.596795,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 12,
+    "elapsed_ms": 2.632665,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 13,
+    "elapsed_ms": 2.620276,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 14,
+    "elapsed_ms": 2.572685,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 15,
+    "elapsed_ms": 2.620925,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 16,
+    "elapsed_ms": 2.616832,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 17,
+    "elapsed_ms": 2.606943,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 18,
+    "elapsed_ms": 2.632979,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 19,
+    "elapsed_ms": 2.640035,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 20,
+    "elapsed_ms": 2.591573,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 21,
+    "elapsed_ms": 2.644035,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 22,
+    "elapsed_ms": 2.620425,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 23,
+    "elapsed_ms": 4.025663,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 24,
+    "elapsed_ms": 2.736053,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 25,
+    "elapsed_ms": 2.673331,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 26,
+    "elapsed_ms": 2.649535,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 27,
+    "elapsed_ms": 2.619239,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 28,
+    "elapsed_ms": 2.626721,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 29,
+    "elapsed_ms": 2.640849,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  },
+  {
+    "case_id": "misuse_6_post_destroy_use",
+    "repeat": 30,
+    "elapsed_ms": 2.696571,
+    "expected_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ],
+    "observed_warnings": [
+      "missing-zeroize",
+      "unauthorized-domain-transition",
+      "use-after-zeroize"
+    ]
+  }
+]

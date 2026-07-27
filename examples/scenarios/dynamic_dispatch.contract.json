@@ -1,0 +1,15 @@
+{
+  "module": "dynamic_dispatch",
+  "buffers": [
+    {
+      "name": "key",
+      "element_type": "uint8_t",
+      "sensitive": true,
+      "must_zeroize": true,
+      "forbid_post_send_use": true,
+      "allowed_sinks": ["safe_send"],
+      "forbidden_sinks": ["unsafe_send"],
+      "transport_sink": "dummy_transport"
+    }
+  ]
+}
