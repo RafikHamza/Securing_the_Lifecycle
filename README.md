@@ -1,6 +1,6 @@
 # CPD Verifier Artifact
 
-CPD Verifier is a contract-guided Python analyzer for secret-lifecycle and cryptographic protection-domain violations. The ComMag extension checks a multimodal embodied-IoT safety workflow spanning raw sensing, local features, CKKS encrypted evaluation, ML-KEM key establishment, authenticated control, freshness checks, actuation, and destruction.
+CPD Verifier is a contract-guided  analyzer for secret-lifecycle and cryptographic protection-domain violations. The ComMag extension checks a multimodal embodied-IoT safety workflow spanning raw sensing, local features, CKKS encrypted evaluation, ML-KEM key establishment, authenticated control, freshness checks, actuation, and destruction.
 
 ## Install and test
 
@@ -60,4 +60,4 @@ The collector verifies the platform, runs 30 repetitions per case, checks exact 
 
 ## Scope
 
-The manuscript evaluates the Python AST analyzer. Optional native-C/libclang functionality is included for engineering continuity but is not used as paper evidence. CPD verification does not prove cryptographic security, side-channel resistance, physical erasure, protocol liveness, or runtime integrity.
+The manuscript evaluates the AST analyzer. Optional native-C/libclang functionality is included for engineering continuity. CPD verification does not prove cryptographic security, side-channel resistance, physical erasure, protocol liveness, or runtime integrity.
