@@ -1,0 +1,4 @@
+numpy==2.5.3
+tenseal==0.3.16
+pqcrypto==0.3.4
+cryptography==50.0.1
